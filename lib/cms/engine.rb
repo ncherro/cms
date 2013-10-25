@@ -1,4 +1,3 @@
-require "spree/core"
 require "nested_form"
 require "simple_form"
 require "ancestry"
