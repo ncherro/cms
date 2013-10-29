@@ -1,5 +1,9 @@
 module Cms
-  class BaseController < ActionController::Base
+  class BaseController < ::Cms.controller_base_class
+
+    def index
+      raise "HI"
+    end
+
   end
 end
-
