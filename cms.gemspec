@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Content Management System for Rails 4"
   s.description = "Provides a Content Management System for Rails 4 apps"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 4.0.0"
 
@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.add_dependency "dragonfly", "~> 0.9.15"
   s.add_dependency "tinymce-rails", "~> 4.0"
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "mysql2"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "quiet_assets"
 end
