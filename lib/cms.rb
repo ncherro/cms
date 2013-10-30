@@ -2,21 +2,21 @@ require "cms/engine"
 
 module Cms
 
-  mattr_accessor :controller_base_class
-  self.controller_base_class = 'ApplicationController'
+  mattr_accessor :base_controller_class
+  self.base_controller_class = 'ApplicationController'
 
-  mattr_accessor :admin_controller_base_class
-  self.admin_controller_base_class = 'ApplicationController'
+  mattr_accessor :admin_base_controller_class
+  self.admin_base_controller_class = 'ApplicationController'
 
   mattr_accessor :user_class
   self.user_class = 'User'
 
-  def self.controller_base_class
-    @@controller_base_class.constantize
+  def self.base_controller_class
+    @@base_controller_class.constantize
   end
 
-  def self.admin_controller_base_class
-    @@admin_controller_base_class.constantize
+  def self.admin_base_controller_class
+    @@admin_base_controller_class.constantize
   end
 
   def self.user_class

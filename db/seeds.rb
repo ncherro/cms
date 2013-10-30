@@ -23,11 +23,11 @@ Cms::MenuItem.create([
   {
     title: 'Home',
     css_id: 'home',
-    menu: Css::Menu.find(name: 'Main'),
+    menu: Cms::Menu.find_by(name: 'Main'),
     page_attributes: {
       title: 'Home',
       body: '<p>Hey</p>',
-      layout: Cms::Layout.find(name: 'Homepage'),
+      layout: Cms::Layout.find_by(name: 'Homepage'),
     },
   },
 ])
